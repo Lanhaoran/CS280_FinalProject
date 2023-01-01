@@ -1,0 +1,52 @@
+index 1
+
+lr = 1-4e
+d_model = 512
+multipier = 2.5
+max_min_noral: False
+standard_noral: False
+data = Beef
+reconstruction
+
+index 2
+
+lr = 1-4e
+d_model = 512
+multipier = 2.5
+max_min_noral: False
+standard_noral: False
+data = Beef
+classification
+
+index 3
+
+lr = 1-3e
+d_model = 512
+multipier = 2.5
+max_min_noral: False
+standard_noral: False
+data = Beef
+classification
+
+
+index 4
+
+lr = 1-4e
+d_model = 512
+multipier = 2.5
+max_min_noral: False
+standard_noral: False
+data = Strawberry
+classification
+
+index 5
+
+lr = 1-4e
+d_model = 512
+multipier = 2.5
+max_min_noral: False
+standard_noral: False
+data = Strawberry
+l2_lambda = 0.9
+dropout = 0.15
+classification

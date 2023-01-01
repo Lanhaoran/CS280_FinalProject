@@ -1,0 +1,90 @@
+INDEX = 1
+# train setting
+config_dtcr['max_iter'] = 500 # config
+config_dtcr['alter_iter'] = 20
+config_dtcr['test_every_epoch'] = 10
+config_dtcr['learning_rate'] = 5e-4
+config_dtcr['batch_size'] = 50
+
+INDEX = 2
+# train setting
+config_dtcr['max_iter'] = 500 # config
+config_dtcr['alter_iter'] = 20
+config_dtcr['test_every_epoch'] = 10
+config_dtcr['learning_rate'] = 1e-3
+config_dtcr['batch_size'] = 100
+# loss
+config_dtcr['lambda'] = 1e-2   [1e-2, 1e-3, 1e-4]
+random_inintailized = False
+# performance setting
+config_dtcr['indicator'] = 'NMI' # 'RI' or 'NMI'
+# classification
+config_dtcr['classifier_hidden_units'] = [128,2]
+
+
+INDEX = 3
+# train setting
+config_dtcr['max_iter'] = 500 # config
+config_dtcr['alter_iter'] = 10
+config_dtcr['test_every_epoch'] = 20
+config_dtcr['learning_rate'] = 5e-4
+config_dtcr['batch_size'] = 100
+# loss
+config_dtcr['lambda'] = 1e-2   [1e-2, 1e-3, 1e-4]
+random_inintailized = False
+# performance setting
+config_dtcr['indicator'] = 'RI' # 'RI' or 'NMI'
+# classification
+config_dtcr['classifier_hidden_units'] = [128,2]
+
+INDEX = 4
+# train setting
+config_dtcr['max_iter'] = 500 # config
+config_dtcr['alter_iter'] = 10
+config_dtcr['test_every_epoch'] = 20
+config_dtcr['learning_rate'] = 5e-4
+config_dtcr['batch_size'] = 100
+# loss
+config_dtcr['lambda'] = 1e-2   [1e-2, 1e-3, 1e-4]
+random_inintailized = False
+# performance setting
+config_dtcr['indicator'] = 'RI' # 'RI' or 'NMI'
+# classification
+config_dtcr['classifier_hidden_units'] = [128,2]
+
+INDEX = 5 
+# setting same as 4, but different dataset
+
+INDEX = 6
+# train setting
+config_dtcr['max_iter'] = 500 # config
+config_dtcr['alter_iter'] = 10
+config_dtcr['test_every_epoch'] = 20
+config_dtcr['learning_rate'] = 1e-4
+config_dtcr['batch_size'] = 100
+# loss
+config_dtcr['lambda'] = [1e-1, 1e-2, 1e-3]
+random_inintailized = True
+# performance setting
+config_dtcr['indicator'] = 'RI' # 'RI' or 'NMI'
+# classification
+config_dtcr['classifier_hidden_units'] = [128,2]
+# network
+config_dtcr['encoder_hidden_units'] = [150,100,50]
+
+INDEX = 8
+# train setting
+config_dtcr['max_iter'] = 500 # config
+config_dtcr['alter_iter'] = 10
+config_dtcr['test_every_epoch'] = 20
+config_dtcr['learning_rate'] = 1e-5
+config_dtcr['batch_size'] = 100
+# loss
+config_dtcr['lambda'] = [1e-3]
+random_inintailized = True
+# performance setting
+config_dtcr['indicator'] = 'NMI' # 'RI' or 'NMI'
+# classification
+config_dtcr['classifier_hidden_units'] = [128,2]
+# network
+config_dtcr['encoder_hidden_units'] = [50,50,30]
